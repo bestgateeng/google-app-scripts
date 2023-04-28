@@ -4,8 +4,8 @@ const FOLDER_ID = "";
 function sendSpreadsheetsByEmail() {
   var folderId = FOLDER_ID;
   var emailAddress = EMAIL_RECIPIENT;
-  var subject = 'IMAGINEDRAGON monthly telework logs';
-  var message = 'Please find the attached Bestgate Engineering's telework logs for last month. Thank you.';
+  var subject = 'Bestgate Engineering Telework Logs';
+  var message = 'Please find the attached spreadsheets for this month for all of Bestgate Engineering.';
 
   var folder = DriveApp.getFolderById(folderId);
   var files = folder.getFilesByType(MimeType.GOOGLE_SHEETS);
